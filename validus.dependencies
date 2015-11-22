@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "TheRingMaster/android_kernel_moto_shamu",
+    "target_path": "kernel/moto/shamu",
+    "branch": "6.0"
+  },
+  {
+    "repository": "TheMuppets/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "branch":      "cm-13.0"
+  }
+]

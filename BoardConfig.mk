@@ -19,10 +19,16 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
-
+CLANG_O3 := true
+STRICT_ALIASING := true
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := true
+ENABLE_GCCONLY := true
 TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
+TARGET_GCC_VERSION_EXP := 5.2
+TARGET_GCC_VERSION_ARM := 5.2
 TARGET_KERNEL_CONFIG := shamu_defconfig
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb

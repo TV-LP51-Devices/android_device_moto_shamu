@@ -26,6 +26,9 @@ GRAPHITE_OPTS := true
 ENABLE_GCCONLY := true
 TARGET_NO_BOOTLOADER := true
 
+# Build
+export USE_ORACLE_JAVA := 1
+
 # Inline kernel building
 TARGET_GCC_VERSION_EXP := 5.2
 TARGET_GCC_VERSION_ARM := 5.2

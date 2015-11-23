@@ -20,11 +20,14 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 CLANG_O3 := true
-STRICT_ALIASING := true
+STRICT_ALIASING := false
 KRAIT_TUNINGS := true
 GRAPHITE_OPTS := true
 ENABLE_GCCONLY := true
 TARGET_NO_BOOTLOADER := true
+
+# Build
+export USE_ORACLE_JAVA := 1
 
 # Inline kernel building
 TARGET_GCC_VERSION_EXP := 5.2
@@ -150,7 +153,5 @@ BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := \
     hardware/cyanogen   \
     device/moto/shamu/cmhw
-
-USE_CLANG_PLATFORM_BUILD := true
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk

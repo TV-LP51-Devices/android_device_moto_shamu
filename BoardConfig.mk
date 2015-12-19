@@ -24,6 +24,9 @@ STRICT_ALIASING := false
 KRAIT_TUNINGS := true
 GRAPHITE_OPTS := true
 ENABLE_GCCONLY := true
+
+ENABLE_CPUSETS := true
+
 TARGET_NO_BOOTLOADER := true
 
 # Build
